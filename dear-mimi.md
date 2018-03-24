@@ -154,9 +154,11 @@ Wait -- that "Special Fact Code" is wrong because it references something that i
 
 We have a schoolyard of children who all have the exact same set of facts in their heads. Let's say there's 100 of them. And if you asked them what happened at Schoolyard that lunchtime, they could all rattle through to the last fact, and give its code,  "EganMay IkesLay IckyNay IckyNay IkesLay ErryKay EntinQuay RtelEay IssedKay ArahSay ArlsonCay OolyardSchay UnchLay"
 
-Now, imagine a new child wanders onto the courtyard.  And she's singing a different set of facts. Maybe it's close, it probably is, but it's off in one or two places. It leaves out some critical information. What happens? Well, simple. It's one child singing. There are 100 others. The 100 others win. The 1 child gets killed, her song forgotten, and the new song replaced in her head. Maybe she's not killed, but 100-1, her song gets replaced, and now there are 101 children singing the same song. If you doubt this is what happens, you've not spent much time on a Brooklyn playground.
+Now, imagine a new child wanders onto the courtyard.  And she's singing a different set of facts. Maybe it's close, it probably is, but it's off in one or two places. It leaves out some critical information. What happens? Well, simple. It's one child singing. There are 100 others. The 100 others win. The 1 child gets killed, her song forgotten, and the new song replaced in her head. Maybe she's not killed, but 100-1, her song gets replaced, and now there are 101 children singing the same song. If you doubt this is what happens, you've not spent much time on a Brooklyn playground. 
 
 Next case, say 102 children come to the schoolyard where the 101 children are congregated, (this is very Sharks & the Jets) and the 102 children have a different version of the song, their song wins. Do the math. You have 203 children, 51% of them believe Thing A, 49% of them believe Thing B, they're children, it's very Lord Of The Flies, by the end of lunch there are 203 children singing Thing A.   
+
+(**Ed. Note**: This metaphor with the majority percentage of children winning is not fully accurate yet as it is not handling hashrate … and could give the incorrect idea that every miner has an equal say. I am working on extending my metaphor to convey this as well)
 
 We'll come back to this. The "children" don't really win in a clobber-brute-force kind of schoolyard fight, but just hang onto it for a moment.  The point is, the majority of children, their song wins.  
 

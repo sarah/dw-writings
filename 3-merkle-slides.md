@@ -5,8 +5,9 @@ One of the things with the distributed web as envisioned by IPFS is that all con
 There's something called a "[Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree)".  Or "Merkle dag". Or "Merkle".  Merkle was the last name of the man who invented this data structure. His first name was Robert. 
 
 A merkle tree is a data structure that, as I like to think of it, encodes history so that you cannot go back and change it. 
-Merkle trees are the underlying data structure that allows cryptocurrencies like Bitcoin and Ethereum to function, so it's pretty important that people can't change what happened in Bitcoin because it would be changing who has how much bitcoin / money. Merkle uses a lot of sophisticated math to cryptographically encode the data, but I’m going to explain it using Pig Latin. 
+Merkle trees are the underlying data structure that allow cryptocurrencies like Bitcoin and Ethereum to function, so it's pretty important that people can't change what happened in Bitcoin because it would be changing who has how much bitcoin / money. 
 
+Merkle uses a lot of sophisticated math to cryptographically encode the data, but I’m going to explain it using Pig Latin. 
 
 Let’s say we’re looking at some data on your computer and we want to store that data in a snapshot in time, let’s say we’re doing a backup.  You have four things:  
 
@@ -15,15 +16,16 @@ Let’s say we’re looking at some data on your computer and we want to store t
 * an mp3 of your favorite song, 
 * and some data, an excel spreadsheet say: 
 ![Merkle with cats](CatMerkle.png "Merkle with Cats")
-[TODO Walk through how the data is stored, explaining the merkle root]. You can easily check with the inputs if it matches the merkle root.
+
+The leaf nodes (nodes that don't have children) each encrypt a piece of data, in this case using Pig Latin. Each parent node encrypts the values of its children, all the way up to the root of the tree. This means that the Merkle root has effectively "rolled up" every piece of data below it in the tree, such that any small change would change the root hash.
 
 ---
-Now, let’s say you, or someone else, tries to tamper with your data, and they swap out the picture of your cat with a picture of a red cat. Everything changes up this tree and your merkle root is different. This is a sign that data has been changed and is no longer trustworthy:
+To illustrate this, let’s say you, or someone else, tries to tamper with your data, and they swap out the picture of your cat with a picture of a RED cat. Different cat.  Everything changes up this tree and your Merkle root is different. This is a sign that data has been changed and is no longer trustworthy:
 ![Changed Merkle with cats](CatMerkleChanged.png "Merkle with a changed cat")
 
 ---
 
-Merkle trees use a cryptographic function called [SHA256](https://en.wikipedia.org/wiki/SHA-2), which is very complex and safe for bitcoin and content-addressing.  If we built the new web -- or our cryptocurrencies -- on Pig Latin, our file names would grow ridiculously, and it would be easy to hack.  
+Merkle trees use a cryptographic function called [SHA256](https://en.wikipedia.org/wiki/SHA-2) to encode the data, which is very complex and therefore safe for bitcoin and content-addressing.  If we built the new web -- or our cryptocurrencies -- on Pig Latin, our file names would grow ridiculously, and it would be easy to hack.  
 
 ![Pig Latin v. SHA256](SHA256vPigLatin.png "Pig Latin versus SHA256")
 

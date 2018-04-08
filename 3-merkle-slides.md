@@ -1,4 +1,4 @@
-Goal: Summarize [this story](dear-mimi.md) in 3 slides to explain merkle (sans mining) in the context of the distributed web.
+Goal: In 3 slides, explain Merkle trees in the context of the distributed web.
 
 One of the things with the distributed web as envisioned by [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) is that all content has a unique web address that is independent of where the content is hosted.  So for example, currently, if you have all your cat pictures on Instagram, and Instagram shuts down, all the links you've shared to your cat pictures will no longer work. In the IPFS version of the web, your cat pictures will have a unique address that never changes. And if you change your cat picture, your changed cat picture will have its own unique address.  
 
@@ -6,7 +6,7 @@ How does this work?
 
 There's a data structure, which is just a way of organizing data, called a "[Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree)".  Or "Merkle DAG" ([Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)). Or "Merkle".  Merkle was the last name of the man who invented this data structure. His first name was Robert. 
 
-A Merkle tree is a data structure that, as I like to think of it, encodes history so that you cannot go back and change it. It's the "no fake news" of data structures. 
+A Merkle tree is a data structure that, as I like to think of it, encodes history so that you cannot go back and change it. In the parlance of 2018, it's the "no fake news" of data structures. 
 
 Merkle trees are the underlying data structure that allow cryptocurrencies like Bitcoin and Ethereum to function, so it's pretty important that people can't change the record of what happened.
 
